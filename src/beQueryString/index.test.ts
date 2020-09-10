@@ -3,12 +3,11 @@ import beQueryString from "./index";
 describe('beQueryString', () => {
   it('should run without error', function () {
     const obj = {}
-    try {
+    const test = () => {
       beQueryString(obj)
-    } catch (e) {
-    } finally {
-      expect(beQueryString).not.toThrow();
     }
+    
+    expect(test).not.toThrow();
   });
   it('should return correct string', function () {
     const obj = {a: 1, b: 2};

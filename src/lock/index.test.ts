@@ -3,13 +3,8 @@ import lock from "./index";
 
 describe('lock', () => {
   it('should run without errors', function () {
-    const fn = lock;
-    try {
-      fn();
-    } catch (e) {}
-    finally {
-      expect(fn).not.toThrow();
-    }
+    const test = () => lock();
+      expect(test).not.toThrow();
   });
   it('should be unlocked with unlock call', async (done) => {
     const random = "I am a random string";
