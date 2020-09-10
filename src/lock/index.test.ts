@@ -24,7 +24,7 @@ describe('lock', () => {
 
     done();
   });
-  it('should always be waiting before unlock call', async (done) => {
+  it('should always be waiting state before unlock call', async (done) => {
     let i = 1;
     const {unlock, runner} = lock();
 

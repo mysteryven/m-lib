@@ -3,15 +3,9 @@
     "outDir": "dist",
     "declaration": true,
     "baseUrl": ".",
-    "module": "esnext",
+    "module": "commonjs",
     "target": "es5",
-    "esModuleInterop": true,
-    "lib": [
-      "esnext",
-      "dom"
-    ],
     "sourceMap": true,
-    "jsx": "react",
     "moduleResolution": "node",
     "rootDir": ".",
     //    "forceConsistentCasingInFileNames": true,
