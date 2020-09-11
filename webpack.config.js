@@ -4,6 +4,7 @@ module.exports = {
     entry: {
         'm-lib': './src/index.ts'
     },
+    mode: 'production',
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx']
     },

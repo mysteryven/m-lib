@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "build:browser": "webpack --config webpack.config.prod.js",
+    "build:browser": "webpack --config webpack.config.js",
     "build": "./node_modules/.bin/gulp"
   },
   "keywords": [],
