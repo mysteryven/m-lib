@@ -8,9 +8,9 @@ type Arr = any;
 export default function flatten(arr: Arr, d: number = 1) {
   if (d > 0) {
     return arr.reduce(function flattenInner(acc: any[], val: Arr) {
-      return acc.concat(Array.isArray(val) ? flatten(val, d - 1) : val), [];
-    })
+      return acc.concat(Array.isArray(val) ? flatten(val, d - 1) : val);
+    }, [])
   } else {
-    arr.slice()
+    return arr.slice()
   }
 };
