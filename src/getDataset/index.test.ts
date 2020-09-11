@@ -8,4 +8,9 @@ describe('lock', () => {
     }
     expect(test).not.toThrow();
   });
+
+  it('should return default Value if not exist', function () {
+    const obj = getDataSet({ target: { dataset: { } } }, 'hi');
+    expect(obj.b).toEqual('hi');
+  })
 });
